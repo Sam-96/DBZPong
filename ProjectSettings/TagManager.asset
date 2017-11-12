@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Goku
+    uniqueID: 3449083101
+    locked: 0
+  - name: Vegeta
+    uniqueID: 829974467
+    locked: 0
+  - name: Planet Namek
+    uniqueID: 2607793491
+    locked: 0
