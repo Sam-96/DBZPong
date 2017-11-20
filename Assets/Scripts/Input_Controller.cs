@@ -22,7 +22,7 @@ public class Input_Controller : MonoBehaviour {
         if (Input.GetKey(KeyCode.Q))
         {
             //Sets velocity to move up 1
-            leftPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, 5f, 0f);
+            leftPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, 9f, 0f);
             //Debug.Log("Vegeta is ascending.");
         }
 
@@ -30,7 +30,7 @@ public class Input_Controller : MonoBehaviour {
        else if (Input.GetKey(KeyCode.A))
         {
             //Sets velocity to move down -1
-            leftPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, -5f, 0f);
+            leftPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, -9f, 0f);
 
             // Debug.Log("Vegeta is descending.");
         }
@@ -42,16 +42,16 @@ public class Input_Controller : MonoBehaviour {
         //Moves right paddle (Vegeta) with up key
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            //Sets velocity to move up 1
-            rightPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, 5f, 0f);
+            //Sets velocity to move up
+            rightPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, 9f, 0f);
             //Debug.Log("Goku is ascending.");
         }
 
         //Moves right paddle (Goku) with down key
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            //Sets velocity to move down -1
-            rightPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, -5f, 0f);
+            //Sets velocity to move down 
+            rightPaddle.GetComponent<Rigidbody>().velocity = new Vector3(0f, -9f, 0f);
 
             // Debug.Log("Goku is descending.");
         }

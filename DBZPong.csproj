@@ -80,6 +80,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Input_Controller.cs" />
     <Compile Include="Assets\Scripts\Ki_Ball_Controller.cs" />
+    <Compile Include="Assets\Scripts\Menu_Controller.cs" />
+    <Compile Include="Assets\Scripts\Scoreboard_Controller.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

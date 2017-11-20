@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Start Menu.unity
+    guid: 44c432c3c1340cb458827942a6dd213c
+  - enabled: 1
+    path: Assets/DB Pong.unity
+    guid: 70027470bc002ea4fb66d434e8e84fee
+  - enabled: 1
+    path: Assets/Vegeta Wins.unity
+    guid: 849a0c61244a13e4a84a1279a63cfa50
+  - enabled: 1
+    path: Assets/Goku Wins.unity
+    guid: d2299e4251cb81e4ab0acbf6d94ae0e5
