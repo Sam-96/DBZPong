@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Scoreboard_Controller : MonoBehaviour {
 
@@ -34,6 +35,12 @@ public class Scoreboard_Controller : MonoBehaviour {
         playerOneScore += 1;
 
         playerOneScoreTxt.text = playerOneScore.ToString();
+
+        //Vegeta's victory
+        if(playerOneScore > 10)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public void GivePlayerTwoAPoint()
@@ -42,5 +49,11 @@ public class Scoreboard_Controller : MonoBehaviour {
         playerTwoScore += 1;
 
         playerTwoScoreTxt.text = playerTwoScore.ToString();
+
+        //Goku's victory
+        if (playerTwoScore > 10)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }
