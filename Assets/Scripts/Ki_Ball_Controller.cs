@@ -109,12 +109,12 @@ public class Ki_Ball_Controller : MonoBehaviour {
             float speedInXDir = 0f;
 
             if (rigbod.velocity.x > 0f)
-                speedInXDir = 8f;
+                speedInXDir = 14f;
 
             if(rigbod.velocity.x < 0f)
-                speedInXDir = -8f;
+                speedInXDir = -14f;
 
-            rigbod.velocity = new Vector3(speedInXDir,-8f, 0f);
+            rigbod.velocity = new Vector3(speedInXDir,-14f, 0f);
             //Debug.Log("Hit one of the ends of the screen.");
         }
 
@@ -123,12 +123,12 @@ public class Ki_Ball_Controller : MonoBehaviour {
             float speedInXDir = 0f;
 
             if (rigbod.velocity.x > 0f)
-                speedInXDir = 8f;
+                speedInXDir = 14f;
 
             if (rigbod.velocity.x < 0f)
-                speedInXDir = -8f;
+                speedInXDir = -14f;
 
-            rigbod.velocity = new Vector3(speedInXDir, 8f, 0f);
+            rigbod.velocity = new Vector3(speedInXDir, 14f, 0f);
         }
 
 
@@ -136,32 +136,32 @@ public class Ki_Ball_Controller : MonoBehaviour {
         //If it was Goku or Vegeta
         if (hit.gameObject.name == "Vegeta")
         {
-            rigbod.velocity = new Vector3(12f, 0f, 0f);
+            rigbod.velocity = new Vector3(14f, 14f, 0f);
 
             //If we hit the lower half of the bat
             if (transform.position.y - hit.gameObject.transform.position.y < -0.5)
             {
-                rigbod.velocity = new Vector3(8f, -8f, 0f);
+                rigbod.velocity = new Vector3(12f, -12f, 0f);
             }
 
             if (transform.position.y - hit.gameObject.transform.position.y > 0.5)
             {
-                rigbod.velocity = new Vector3(8f, 8f, 0f);
+                rigbod.velocity = new Vector3(14f, 14f, 0f);
             }
         }
 
         if (hit.gameObject.name == "Goku")
         {
-            rigbod.velocity = new Vector3(-12f, -8f, 0f);
+            rigbod.velocity = new Vector3(-14f, -14f, 0f);
 
             //If we hit the lower half of the bat
             if (transform.position.y - hit.gameObject.transform.position.y < -0.5)
             {
-                rigbod.velocity = new Vector3(-8f, -8f, 0f);
+                rigbod.velocity = new Vector3(-14f, -14f, 0f);
             }
             if (transform.position.y - hit.gameObject.transform.position.y > 0.5)
             {
-                rigbod.velocity = new Vector3(-8f, 8f, 0f);
+                rigbod.velocity = new Vector3(-14f, 14f, 0f);
             }
         }
 
